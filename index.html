@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>温暖随身记 | 便签纸条</title>
+    <link rel="stylesheet" href="style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Serif+SC:wght@300;400;500;700&family=Ma+Shan+Zheng&display=swap" rel="stylesheet">
+</head>
+<body>
+    <div class="container">
+        <header>
+            <h1>🌸 温暖随身记 🌸</h1>
+            <p>记录生活中的点点滴滴，让美好回忆装满玻璃瓶</p>
+        </header>
+        
+        <main>
+            <div class="note-form">
+                <h2>写一张便签</h2>
+                <textarea id="note-content" placeholder="写下今天的心情、想法或待办事项..."></textarea>
+                
+                <div class="note-options">
+                    <div class="mood-selector">
+                        <label>选择心情：</label>
+                        <div class="mood-buttons">
+                            <button class="mood-btn active" data-mood="开心" style="background-color: #FFD1DC;">开心 😊</button>
+                            <button class="mood-btn" data-mood="平静" style="background-color: #D1E8FF;">平静 😌</button>
+                            <button class="mood-btn" data-mood="感动" style="background-color: #E6E6FA;">感动 🥰</button>
+                            <button class="mood-btn" data-mood="思念" style="background-color: #F0E6FF;">思念 🌙</button>
+                        </div>
+                    </div>
+                    
+                    <button id="save-note" class="save-btn">保存便签</button>
+                </div>
+            </div>
+            
+            <div class="note-bottle">
+                <h2>玻璃瓶中的回忆</h2>
+                <div class="bottle">
+                    <div class="bottle-neck"></div>
+                    <div class="bottle-body">
+                        <div class="notes-container" id="notes-container">
+                            <!-- 已保存的便签将显示在这里 -->
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </main>
+        
+        <footer>
+            <p>每一个小小的想法都值得被珍藏 💖</p>
+        </footer>
+    </div>
+    
+    <script src="script.js"></script>
+</body>
+</html>
